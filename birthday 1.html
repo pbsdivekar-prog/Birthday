@@ -1,0 +1,264 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HAPPY BIRTHDAY</title>
+
+<style>
+
+/* GENERAL DESIGN */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #ffe0eb, #ffc6da, #fff0f5);
+    color: #813c5a;
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 25px 15px;
+}
+
+/* FLOATING HEARTS */
+
+.heart {
+    position: fixed;
+    bottom: -40px;
+    font-size: 25px;
+    animation: float 7s linear infinite;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.heart:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.heart:nth-child(2) {
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(3) {
+    left: 65%;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(4) {
+    left: 85%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px 22px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(190, 90, 130, 0.2);
+}
+
+/* HEADING */
+
+h1 {
+    color: #df4d87;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.decoration {
+    font-size: 30px;
+    margin: 15px;
+}
+
+/* POEM */
+
+.poem {
+    background: #fff0f5;
+    border: 2px dashed #f3a2c1;
+    border-radius: 20px;
+    padding: 22px 12px;
+    margin: 25px 0;
+    line-height: 2;
+}
+
+.poem h2 {
+    color: #d94b82;
+}
+
+/* MUSIC */
+
+.music {
+    margin: 30px 0;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* BUTTON */
+
+.next {
+    display: inline-block;
+    background: #e85b91;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.next:hover {
+    background: #c83270;
+    transform: scale(1.06);
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #ad6381;
+}
+
+/* MOBILE SCREEN */
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        padding: 22px 15px;
+    }
+
+    .poem {
+        font-size: 14px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING HEARTS -->
+
+<div class="heart">&hearts;</div>
+<div class="heart">&hearts;</div>
+<div class="heart">&#10084;</div>
+<div class="heart">&hearts;</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+    <div class="decoration">
+    &#9825; &#10047; &#9829; &#10047; &#9825;
+</div>
+
+    <h1>Happy Birthday Ankita! &#9829;</h1>
+
+    <p class="subtitle">
+        A little surprise for a very special human...
+        <br>
+        (and my favourite headache 😂)
+    </p>
+
+
+    <!-- FRIENDSHIP POEM -->
+
+    <div class="poem">
+
+        <h2>To My Favourite Headache &#9829;</h2>
+
+        A little crazy, a little weird,<br>
+        The kind of friend everyone should have near.<br>
+
+        Full of drama, laughter and fun,<br>
+        A walking disaster, but my favourite one! 😂<br><br>
+
+        From silly talks to endless tea,<br>
+        You're stuck with me, unfortunately!<br>
+
+        You drive me crazy, that's no lie,<br>
+        But life's less fun when you're not nearby. 🥹<br><br>
+
+        So here's to you and all your craziness,<br>
+        Your random talks and your endless madness.<br>
+
+        Stay the same, keep shining bright,<br>
+        And keep annoying me for the rest of my life! 💗
+
+    </div>
+
+
+    <!-- BIRTHDAY MUSIC -->
+
+    <div class="music">
+
+        <h2>🎵 A Little Birthday Music</h2>
+
+        <p>Every birthday deserves a soundtrack! 💕</p>
+
+        <audio controls loop>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+    </div>
+
+
+   
+<!-- NEXT PAGE BUTTON -->
+
+	<a href="./birthday2.html" class="next">
+    Continue ♡
+</a>
+
+    <div class="footer">
+        Made with 💗 just for Ankita
+        <br>
+        November 8 🎂
+    </div>
+
+</div>
+
+</body>
+</html>
